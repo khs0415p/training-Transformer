@@ -1,0 +1,35 @@
+{
+    "tokenizer_type" : "bpe",
+    "vocab_file_path" : "/home/hyunsookim/conversation/transformer/vocab/",
+    "train_path" : "/home/hyunsookim/conversation/transformer/korean_sns/sns_data/train_2",
+    "valid_path" : "/home/hyunsookim/conversation/transformer/korean_sns/sns_data/valid_2",
+    "model_path" : "/home/hyunsookim/conversation/transformer/model",
+
+    "d_embed" : 128,
+    "enc_N" : 2,
+    "dec_N" : 4,
+    "head" : 2,
+    "dropout" : 0.1,
+    "max_len" : 99999,
+    "eps" : 1e-9,
+    "bias" : 0,
+
+    "batch_size" : 30,
+    "epochs" : 200,
+    "clip" : 4,
+    "warm_steps" : 6000,
+    "T_0" : 50,
+    "T_mult" : 1,
+    "eta_max" : 1e-3,
+    "T_up" : 10,
+    "gamma" : 0.5,
+
+    "src_vocab_size" : 3500,
+    "trg_vocab_size" : 0,
+
+    "stopword" : ["아", "휴", "어", "하", "하하", "오", "흐흐", "휴", "흥", "헉"],
+    "min_freq" : 20,
+
+    "K" : 1
+
+}
